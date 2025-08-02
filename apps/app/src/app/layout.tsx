@@ -3,7 +3,7 @@ import '@comp/ui/globals.css';
 
 import { LinkedInInsight } from '@/components/tracking/LinkedInInsight';
 import { env } from '@/env.mjs';
-import { auth } from '@/utils/auth';
+//import { auth } from '@/utils/auth';
 import { cn } from '@comp/ui/cn';
 import { Analytics as DubAnalytics } from '@dub/analytics/react';
 import { GeistMono } from 'geist/font/mono';
@@ -75,10 +75,10 @@ const font = localFont({
 
 export const preferredRegion = ['auto'];
 
-export default async function Layout({ children }: { children: React.ReactNode }) {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
+//export default async function Layout({ children }: { children: React.ReactNode }) {
+//  const session = await auth.api.getSession({
+ //   headers: await headers(),
+ // });
 
   const dubIsEnabled = env.DUB_API_KEY !== undefined;
   const dubReferUrl = env.DUB_REFER_URL;

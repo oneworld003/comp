@@ -69,14 +69,14 @@ const font = localFont({
   variable: '--font-general-sans',
 });
 
-export const preferredRegion = ['auto'];
+//export const preferredRegion = ['auto'];
 
-if (env.NEXT_PUBLIC_POSTHOG_KEY && env.NEXT_PUBLIC_POSTHOG_HOST) {
-  initializeServer({
-    apiKey: env.NEXT_PUBLIC_POSTHOG_KEY,
-    apiHost: env.NEXT_PUBLIC_POSTHOG_HOST,
-  });
-}
+//if (env.NEXT_PUBLIC_POSTHOG_KEY && env.NEXT_PUBLIC_POSTHOG_HOST) {
+//  initializeServer({
+//    apiKey: env.NEXT_PUBLIC_POSTHOG_KEY,
+ //   apiHost: env.NEXT_PUBLIC_POSTHOG_HOST,
+//  });
+//}
 
 export default async function Layout(props: { children: React.ReactNode }) {
   const { children } = props;
